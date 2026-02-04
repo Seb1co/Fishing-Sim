@@ -1,7 +1,0 @@
-Seed: 247987
-Player X: 4088
-Player Y: 3958
-Balance: 35506.562500
-Rod: 4 4 4
-Bait: 4
-Fishes: 3 47.754570,
