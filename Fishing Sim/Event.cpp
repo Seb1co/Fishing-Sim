@@ -41,10 +41,9 @@ Event::Event(int gamemap_size_x,int gamemap_size_y) {
 bool Event::shouldRender(int playerX,int playerY,int gamemap_size_x,int gamemap_size_y) {
 	int playerX_virtual_coordinates = playerX - (gamemap_size_x * 31 / 2);
 	int playerY_virtual_coordinates = playerY - (gamemap_size_y * 31 / 2);
-	if (playerX_virtual_coordinates - 960 <= this->coordinates[0] && (playerX_virtual_coordinates + 960 >= this->coordinates[0])) {
-		if (playerY_virtual_coordinates - 600 <= this->coordinates[1] && (playerY_virtual_coordinates + 600 >= this->coordinates[1])) {
+	if ((playerX_virtual_coordinates - 960 <= this->coordinates[0] || playerX_virtual_coordinates - 960 <= this->coordinates[0] + this->lengths[0]) && (playerX_virtual_coordinates + 960 >= this->coordinates[0] || playerX_virtual_coordinates + 960 >= this->coordinates[0] + this->lengths[0])) {
+		if ((playerY_virtual_coordinates - 600 <= this->coordinates[1] || playerY_virtual_coordinates - 600 <= this->coordinates[1] + this->lengths[1]) && (playerY_virtual_coordinates + 600 >= this->coordinates[1] || playerY_virtual_coordinates + 600 >= this->coordinates[1] + this->lengths[1])) {
 			return true;
-
 		}
 	}
 	return false;
