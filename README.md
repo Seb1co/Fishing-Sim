@@ -5,3 +5,5 @@ I -> Show the whole inventory
 E -> opens the shop when in range
 Left_Clik -> fishing,purchasing items when the cursor is hovering the buttons,selecting the type of gear that will be shown in the shop
 W,A,S,D -> for the movement
+# Download
+Link To the itch.io page : <a href="https://seb1co.itch.io/fishing-simulator" target="_blank"> Fishing Simulator </a>
